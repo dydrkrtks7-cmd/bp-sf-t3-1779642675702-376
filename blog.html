@@ -1,124 +1,122 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마포 셔츠룸 블로그 - 서버 웜업의 진실</title>
-    <meta name="description" content="서버 웜업, 당신이 몰랐던 충격적 진실. 마포 셔츠룸이 전하는 웜업의 본질. 24시간 예약 010-6279-0862">
-    <meta name="keywords" content="마포 셔츠룸, 서버 웜업, 블로그, 마포 서버 웜업, 셔츠룸 후기, sf-t3-1779642675702-376, pbn, brutalist, 웜업 가이드">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://sf-t3-1779642675702-376.maphoshirts.xyz/blog.html">
-    <meta property="og:title" content="마포 셔츠룸 블로그 - 서버 웜업의 진실">
-    <meta property="og:description" content="서버 웜업, 당신이 몰랐던 충격적 진실. 마포 셔츠룸이 전하는 웜업의 본질. 24시간 예약 010-6279-0862">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sf-t3-1779642675702-376.maphoshirts.xyz/blog.html">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="서버 웜업이 당신을 망친다 | 마포 셔츠룸 블로그">
-    <meta name="twitter:description" content="웜업 업계의 거짓말을 깨부순다. 진짜 서버 웜업의 기준은 오직 마포 셔츠룸.">
-    <style>
-        /* ---- RESET & BASE ---- */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { font-size: 100%; scroll-behavior: smooth; background: #0a0a0a; color: #e0e0e0; }
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; background: #0a0a0a; color: #e0e0e0; min-height: 100vh; display: flex; flex-direction: column; }
-        /* ---- TYPOGRAPHY ---- */
-        h1, h2, h3, h4 { font-weight: 900; letter-spacing: -0.03em; text-transform: uppercase; color: #f2f2f2; }
-        h1 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1; margin: 0.5em 0; text-shadow: 4px 4px 0 #ff00ff; }
-        h2 { font-size: clamp(1.8rem, 5vw, 3rem); border-left: 8px solid #ff00ff; padding-left: 1rem; margin: 1.5em 0 0.5em; }
-        h3 { font-size: clamp(1.4rem, 3vw, 2rem); margin: 1em 0 0.5em; color: #ff00ff; }
-        p, li, blockquote { font-size: 1.1rem; margin-bottom: 1.2rem; max-width: 70ch; }
-        a { color: #00ffff; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; transition: color 0.2s; }
-        a:hover { color: #ff00ff; }
-        blockquote { border-left: 6px solid #00ffff; padding: 1rem 2rem; background: #111; font-style: italic; color: #ccc; margin: 2rem 0; }
-        /* ---- UTILITY ---- */
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-        .full-bleed { width: 100vw; margin-left: calc(-50vw + 50%); }
-        .text-accent { color: #ff00ff; }
-        .border-brutal { border: 4px solid #f2f2f2; padding: 0.5rem; display: inline-block; }
-        /* ---- NAVIGATION ---- */
-        nav { background: #111; border-bottom: 4px solid #ff00ff; position: sticky; top: 0; z-index: 100; }
-        .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .nav-links { display: flex; gap: 1.8rem; list-style: none; }
-        .nav-links a { color: #e0e0e0; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em; }
-        .nav-links a:hover { color: #ff00ff; }
-        .nav-links .active { color: #00ffff; border-bottom: 2px solid #00ffff; }
-        .tel-link { background: #ff00ff; color: #0a0a0a !important; padding: 0.3rem 1rem; font-weight: 900; border-radius: 0; text-decoration: none; }
-        .tel-link:hover { background: #00ffff; color: #000 !important; }
-        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
-        .hamburger span { display: block; width: 28px; height: 3px; background: #f2f2f2; }
-        @media (max-width: 768px) {
-            .nav-links { display: none; flex-direction: column; background: #111; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; border-bottom: 4px solid #ff00ff; }
-            .nav-links.open { display: flex; }
-            .hamburger { display: flex; }
-            .tel-link { margin-top: 0.5rem; text-align: center; }
-            h1 { font-size: clamp(2rem, 10vw, 3.5rem); }
-            .container { padding: 0 1rem; }
-        }
-        /* ---- LAYOUT ---- */
-        main { flex: 1; padding: 3rem 0; }
-        .blog-article { background: #111; border: 3px solid #333; padding: 2.5rem; margin-bottom: 3rem; position: relative; }
-        .blog-article::before { content: "BRUTAL"; position: absolute; top: -12px; left: 20px; background: #ff00ff; color: #0a0a0a; padding: 0 0.8rem; font-weight: 900; font-size: 0.8rem; letter-spacing: 0.2em; }
-        .blog-meta { color: #888; font-size: 0.9rem; margin-bottom: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
-        .blog-meta span { margin-right: 1.5rem; }
-        .blog-content p { margin-bottom: 1.5rem; }
-        .blog-content ul { margin: 1rem 0 1.5rem 2rem; }
-        .blog-content li { margin-bottom: 0.5rem; }
-        .blog-content .highlight { background: #ff00ff22; border-left: 4px solid #ff00ff; padding: 0.5rem 1rem; }
-        .cta-block { background: #0a0a0a; border: 2px solid #00ffff; padding: 1.5rem; text-align: center; margin: 2.5rem 0; }
-        .cta-block p { margin-bottom: 0.5rem; font-weight: 700; }
-        .cta-block a { display: inline-block; background: #ff00ff; color: #0a0a0a; padding: 0.8rem 2rem; font-weight: 900; text-decoration: none; text-transform: uppercase; margin-top: 0.5rem; }
-        .cta-block a:hover { background: #00ffff; }
-        footer { background: #111; border-top: 4px solid #ff00ff; padding: 2rem 0; text-align: center; margin-top: 3rem; }
-        footer p { font-size: 0.9rem; color: #888; }
-        footer .tel-link { display: inline-block; margin-top: 0.5rem; background: transparent; border: 2px solid #ff00ff; color: #ff00ff !important; }
-        footer .tel-link:hover { background: #ff00ff; color: #0a0a0a !important; }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>마포 셔츠룸 블로그 - 서버 웜업의 진실</title>
+ <meta name="description" content="서버 웜업, 당신이 몰랐던 충격적 진실. 마포 셔츠룸이 전하는 웜업의 본질.">
+ <meta name="keywords" content="마포 셔츠룸, 서버 웜업, 블로그, 마포 서버 웜업, 셔츠룸 후기, sf-t3-1779642675702-376, pbn, brutalist, 웜업 가이드">
+ <link rel="canonical" href="https://sf-t3-1779642675702-376.maphoshirts.xyz/blog.html">
+ <meta property="og:title" content="마포 셔츠룸 블로그 - 서버 웜업의 진실">
+ <meta property="og:description" content="서버 웜업, 당신이 몰랐던 충격적 진실. 마포 셔츠룸이 전하는 웜업의 본질.">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://sf-t3-1779642675702-376.maphoshirts.xyz/blog.html">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="서버 웜업이 당신을 망친다 | 마포 셔츠룸 블로그">
+ <meta name="twitter:description" content="웜업 업계의 거짓말을 깨부순다. 진짜 서버 웜업의 기준은 오직 마포 셔츠룸.">
+ <style>
+ /* ---- RESET & BASE ---- */
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ html { font-size: 100%; scroll-behavior: smooth; background: #0a0a0a; color: #e0e0e0; }
+ body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; background: #0a0a0a; color: #e0e0e0; min-height: 100vh; display: flex; flex-direction: column; }
+ /* ---- TYPOGRAPHY ---- */
+ h1, h2, h3, h4 { font-weight: 900; letter-spacing: -0.03em; text-transform: uppercase; color: #f2f2f2; }
+ h1 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1; margin: 0.5em 0; text-shadow: 4px 4px 0 #ff00ff; }
+ h2 { font-size: clamp(1.8rem, 5vw, 3rem); border-left: 8px solid #ff00ff; padding-left: 1rem; margin: 1.5em 0 0.5em; }
+ h3 { font-size: clamp(1.4rem, 3vw, 2rem); margin: 1em 0 0.5em; color: #ff00ff; }
+ p, li, blockquote { font-size: 1.1rem; margin-bottom: 1.2rem; max-width: 70ch; }
+ a { color: #00ffff; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; transition: color 0.2s; }
+ a:hover { color: #ff00ff; }
+ blockquote { border-left: 6px solid #00ffff; padding: 1rem 2rem; background: #111; font-style: italic; color: #ccc; margin: 2rem 0; }
+ /* ---- UTILITY ---- */
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+ .full-bleed { width: 100vw; margin-left: calc(-50vw + 50%); }
+ .text-accent { color: #ff00ff; }
+ .border-brutal { border: 4px solid #f2f2f2; padding: 0.5rem; display: inline-block; }
+ /* ---- NAVIGATION ---- */
+ nav { background: #111; border-bottom: 4px solid #ff00ff; position: sticky; top: 0; z-index: 100; }
+ .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+ .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+ .nav-links a { color: #e0e0e0; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em; }
+ .nav-links a:hover { color: #ff00ff; }
+ .nav-links .active { color: #00ffff; border-bottom: 2px solid #00ffff; }
+ .tel-link { background: #ff00ff; color: #0a0a0a !important; padding: 0.3rem 1rem; font-weight: 900; border-radius: 0; text-decoration: none; }
+ .tel-link:hover { background: #00ffff; color: #000 !important; }
+ .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+ .hamburger span { display: block; width: 28px; height: 3px; background: #f2f2f2; }
+ @media (max-width: 768px) {
+ .nav-links { display: none; flex-direction: column; background: #111; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; border-bottom: 4px solid #ff00ff; }
+ .nav-links.open { display: flex; }
+ .hamburger { display: flex; }
+ .tel-link { margin-top: 0.5rem; text-align: center; }
+ h1 { font-size: clamp(2rem, 10vw, 3.5rem); }
+ .container { padding: 0 1rem; }
+ }
+ /* ---- LAYOUT ---- */
+ main { flex: 1; padding: 3rem 0; }
+ .blog-article { background: #111; border: 3px solid #333; padding: 2.5rem; margin-bottom: 3rem; position: relative; }
+ .blog-article::before { content: "BRUTAL"; position: absolute; top: -12px; left: 20px; background: #ff00ff; color: #0a0a0a; padding: 0 0.8rem; font-weight: 900; font-size: 0.8rem; letter-spacing: 0.2em; }
+ .blog-meta { color: #888; font-size: 0.9rem; margin-bottom: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+ .blog-meta span { margin-right: 1.5rem; }
+ .blog-content p { margin-bottom: 1.5rem; }
+ .blog-content ul { margin: 1rem 0 1.5rem 2rem; }
+ .blog-content li { margin-bottom: 0.5rem; }
+ .blog-content .highlight { background: #ff00ff22; border-left: 4px solid #ff00ff; padding: 0.5rem 1rem; }
+ .cta-block { background: #0a0a0a; border: 2px solid #00ffff; padding: 1.5rem; text-align: center; margin: 2.5rem 0; }
+ .cta-block p { margin-bottom: 0.5rem; font-weight: 700; }
+ .cta-block a { display: inline-block; background: #ff00ff; color: #0a0a0a; padding: 0.8rem 2rem; font-weight: 900; text-decoration: none; text-transform: uppercase; margin-top: 0.5rem; }
+ .cta-block a:hover { background: #00ffff; }
+ footer { background: #111; border-top: 4px solid #ff00ff; padding: 2rem 0; text-align: center; margin-top: 3rem; }
+ footer p { font-size: 0.9rem; color: #888; }
+ footer .tel-link { display: inline-block; margin-top: 0.5rem; background: transparent; border: 2px solid #ff00ff; color: #ff00ff !important; }
+ footer .tel-link:hover { background: #ff00ff; color: #0a0a0a !important; }
+ </style>
 </head>
 <body>
 
 <main class="container">
-  <article class="blog-article">
-    <p class="blog-meta">서버 웜업 · 오해와 진실</p>
-    <h1>마포 셔츠룸 블로그 - 서버 웜업의 진실</h1>
+ <article class="blog-article">
+ <p class="blog-meta">서버 웜업 · 오해와 진실</p>
+ <h1>마포 셔츠룸 블로그 - 서버 웜업의 진실</h1>
 
-    <div class="blog-content">
-      <p>서버 웜업이라는 표현은 인프라 관련 논의에서 자주 등장하지만, 그만큼 부정확하게 알려진 내용도 많다. 이 글은 흔히 떠도는 오해 몇 가지를 짚고, 실제로는 어떤 의미인지 정리한다.</p>
+ <div class="blog-content">
+ <p>서버 웜업이라는 표현은 인프라 관련 논의에서 자주 등장하지만, 그만큼 부정확하게 알려진 내용도 많다. 이 글은 흔히 떠도는 오해 몇 가지를 짚고, 실제로는 어떤 의미인지 정리한다.</p>
 
-      <h2>오해 1. 웜업은 무조건 서버를 더 빠르게 만든다</h2>
-      <p class="text-accent">사실은 다르다.</p>
-      <p>웜업은 시작 직후에 발생하는 지연 구간을 줄여주는 절차이지, 평상시 처리 속도 자체를 끌어올리는 작업이 아니다. 코드 구조나 쿼리 효율이 근본 원인인 지연은 웜업으로 해결되지 않는다.</p>
+ <h2>오해 1. 웜업은 무조건 서버를 더 빠르게 만든다</h2>
+ <p class="text-accent">사실은 다르다.</p>
+ <p>웜업은 시작 직후에 발생하는 지연 구간을 줄여주는 절차이지, 평상시 처리 속도 자체를 끌어올리는 작업이 아니다. 코드 구조나 쿼리 효율이 근본 원인인 지연은 웜업으로 해결되지 않는다.</p>
 
-      <h2>오해 2. 한 번 설정하면 계속 유효하다</h2>
-      <p class="text-accent">사실은 다르다.</p>
-      <p>트래픽 패턴, 배포 주기, 캐시 대상 데이터가 바뀌면 예열 전략도 함께 재검토해야 한다. 정적으로 고정해 둔 웜업 절차는 시간이 지나며 효과가 줄어들 수 있다.</p>
+ <h2>오해 2. 한 번 설정하면 계속 유효하다</h2>
+ <p class="text-accent">사실은 다르다.</p>
+ <p>트래픽 패턴, 배포 주기, 캐시 대상 데이터가 바뀌면 예열 전략도 함께 재검토해야 한다. 정적으로 고정해 둔 웜업 절차는 시간이 지나며 효과가 줄어들 수 있다.</p>
 
-      <h2>오해 3. 규모가 작은 서비스에는 필요 없다</h2>
-      <p class="text-accent">항상 그런 것은 아니다.</p>
-      <p>트래픽 총량이 적더라도 특정 시간에 요청이 몰리는 서비스라면, 그 구간에서는 콜드 스타트 영향이 똑같이 나타날 수 있다. 필요 여부는 규모보다 요청 패턴으로 판단하는 편이 정확하다.</p>
+ <h2>오해 3. 규모가 작은 서비스에는 필요 없다</h2>
+ <p class="text-accent">항상 그런 것은 아니다.</p>
+ <p>트래픽 총량이 적더라도 특정 시간에 요청이 몰리는 서비스라면, 그 구간에서는 콜드 스타트 영향이 똑같이 나타날 수 있다. 필요 여부는 규모보다 요청 패턴으로 판단하는 편이 정확하다.</p>
 
-      <h2>오해 4. 웜업 범위는 넓을수록 좋다</h2>
-      <p class="text-accent">사실은 다르다.</p>
-      <p>예열 범위를 넓히면 그만큼 유휴 자원과 준비 시간이 늘어난다. 실제로 지연이 발생하는 구간을 먼저 좁혀서 확인한 뒤 범위를 정하는 접근이 더 효율적이다.</p>
+ <h2>오해 4. 웜업 범위는 넓을수록 좋다</h2>
+ <p class="text-accent">사실은 다르다.</p>
+ <p>예열 범위를 넓히면 그만큼 유휴 자원과 준비 시간이 늘어난다. 실제로 지연이 발생하는 구간을 먼저 좁혀서 확인한 뒤 범위를 정하는 접근이 더 효율적이다.</p>
 
-      <section class="highlight">
-        <h2>핵심 정리</h2>
-        <p>서버 웜업은 만능 해결책이 아니라, 시작 구간의 지연을 다루는 하나의 절차다. 어떤 구간에서 왜 지연이 발생하는지 먼저 파악하는 것이 웜업 여부를 판단하는 출발점이 된다.</p>
-      </section>
+ <section class="highlight">
+ <h2>핵심 정리</h2>
+ <p>서버 웜업은 만능 해결책이 아니라, 시작 구간의 지연을 다루는 하나의 절차다. 어떤 구간에서 왜 지연이 발생하는지 먼저 파악하는 것이 웜업 여부를 판단하는 출발점이 된다.</p>
+ </section>
 
-      <ul>
-        <li>지연이 배포 직후에만 나타나는지, 상시 나타나는지 구분한다</li>
-        <li>캐시 미스와 연결 지연 중 어느 쪽이 원인인지 기록한다</li>
-        <li>예열 범위를 늘리기 전에 유휴 자원 비용을 함께 검토한다</li>
-        <li>트래픽 패턴이 바뀔 때마다 예열 전략을 다시 점검한다</li>
-        <li>점검 결과는 다음 배포 주기에 반영할 수 있도록 기록으로 남겨 둔다</li>
-      </ul>
-    </div>
+ <ul>
+ <li>지연이 배포 직후에만 나타나는지, 상시 나타나는지 구분한다</li>
+ <li>캐시 미스와 연결 지연 중 어느 쪽이 원인인지 기록한다</li>
+ <li>예열 범위를 늘리기 전에 유휴 자원 비용을 함께 검토한다</li>
+ <li>트래픽 패턴이 바뀔 때마다 예열 전략을 다시 점검한다</li>
+ <li>점검 결과는 다음 배포 주기에 반영할 수 있도록 기록으로 남겨 둔다</li>
+ </ul>
+ </div>
 
-    <div class="cta-block border-brutal">
-      <p>서버 웜업은 한 번의 설정으로 끝나는 작업이 아니라, 서비스 상황에 맞춰 주기적으로 다시 살펴봐야 하는 절차에 가깝다.</p>
-      <p>문의: <a class="tel-link" href="tel:01062790862">010-6279-0862</a></p>
-    </div>
-  </article>
+ <div class="cta-block border-brutal">
+ <p>서버 웜업은 한 번의 설정으로 끝나는 작업이 아니라, 서비스 상황에 맞춰 주기적으로 다시 살펴봐야 하는 절차에 가깝다.</p>
+ <p>문의: </p>
+ </div>
+ </article>
 </main>
 
 
